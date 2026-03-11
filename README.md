@@ -1,10 +1,8 @@
 # Part 1
 
-# What we're seeing
+## Output
 
-Because the dataset is imbalanced, we're seeing the smaller classes (SECURITY, ENERGY) having very few samples. This reduces the classifier performance on these labels.
-
-Running `make run` with part1.py as `MAIN`:
+Running `make run` with `part1.py` as `MAIN`:
 ```sh
 ❯ make run
 venv/bin/pip install --upgrade pip
@@ -12,24 +10,46 @@ Requirement already satisfied: pip in ./venv/lib/python3.14/site-packages (26
 .0.1)
 venv/bin/python main.py
 category
-BUG            503
-FEATURE        163
-PERFORMANCE     34
-USABILITY       16
-SECURITY         5
-ENERGY           4
+BUG        503
+FEATURE    163
 Name: count, dtype: int64
-Accuracy: 0.8275862068965517
-Precision: 0.8235041938490214
-Recall: 0.8275862068965517
-F1 Score: 0.8081278989233321
+
+====================================
+DECISION_TREE
+====================================
+Accuracy: 0.8582089552238806
+Precision: 0.8527645861601085
+Recall: 0.8582089552238806
+F1 Score: 0.8500389050010609
 
 Confusion Matrix:
-[[95  0  6  0  0  0]
- [ 0  1  0  0  0  0]
- [ 9  0 22  0  0  1]
- [ 5  0  1  1  0  0]
- [ 1  0  0  0  0  0]
- [ 1  0  1  0  0  1]]
+[[96  5]
+ [14 19]]
 
+====================================
+RANDOM_FOREST
+====================================
+Accuracy: 0.8283582089552238
+Precision: 0.8601949927780452
+Recall: 0.8283582089552238
+F1 Score: 0.791226811678044
+
+Confusion Matrix:
+[[101   0]
+ [ 23  10]]
+
+====================================
+SVM
+====================================
+Accuracy: 0.8805970149253731
+Precision: 0.8969256282689119
+Recall: 0.8805970149253731
+F1 Score: 0.8658742982336026
+
+Confusion Matrix:
+[[101   0]
+ [ 16  17]]
 ```
+# Part 2
+
+##
