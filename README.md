@@ -53,6 +53,7 @@ Confusion Matrix:
 # Part 2
 
 Run `make run2`:
+```sh
 ❯ make run2
 venv/bin/pip install --upgrade pip
 Requirement already satisfied: pip in ./venv/lib/python3.14/site-packages (26
@@ -72,7 +73,7 @@ SAVED TO classified.xlsx:
 2  Easy to use for the most part. There should be...            FEATURE
 3                                          Great app                BUG
 4               wow good application to meet friends                BUG
-
+```
 ### Well classified examples
 from `classified1.xlsx`
 
